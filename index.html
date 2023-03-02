@@ -4,16 +4,28 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASsAAACoCAMAAACPKThEAAABX1BMVEX////81yEEBwfv+P0AAAD/1xXkzjn/2QD05KL41CH91x3/1wAAAAQAAAb/3SH+2SEAABYAABDuzh/Iqyd4Zx+IdBMxKhjStiJXSxb8+Ojw0Cz/+ePHyGnfz1Ctkx7pxyLY4sz8+vRnWSmWgSPbvB0ZFQarxpjlxCr/88Xz4pD/99z/4iEfGxANDxry9/T932fk5cH/3Tn667DczU3m8Ozb0Wj/6p7dzEDu7M/I2sjl7N9sXRlXTB7Uy1r78czv0zPn47PU5d7Mymv64Ha6xnezwn7B07LP1qfb3rfL0IT156nO5ufc03Hg02NKPxW3nCm+3Nfa2ZkyKxGszr/w2VbGz5OOu5/Rznb72Ufv3X6jxay4z7bQz32Yu5Dcz1q4w27S27atw4kUFCTN05im0dC21MfP27tFPSOfiCN8ax3l2ocsJQgxLCM7NBwfHiaqkDVKPwqYgTKSv6xxYRH/6ZACsSuNAAATnUlEQVR4nO1d+1/ayBYP4hAzg6QGK4IPQK0vLD7QoigPtdVqVarFirVru7fd1rpt9+69/v+fO3mfCRMCda29mu8vhGSSSb6cc+Y8ZoIg+PDhw4cPHz58+PDhw4cPHz58+PDhw4cPHz58+PDhw4cPHz58+PDhw8e1kc2mAbK3fTu/KrLpeDw+/nSwmAtpyBUHn23RXenbvrFfDdl4fHtDIkRUgTRom4SUN57H476AmUgPzO3kKU0o0AiMRCLljpd9ulQUBroUIiLMIQrwFapMF277Tm8b8QpVvWZEGUCiMli612wVKjlCvIky2ELF+8tWtlIkYmtE6booSsXJxdu+61vBXFfLMmWxRfDO8m3f98/H+kK5XaZ02covrN/2vf9kzBURz0VoAQht3C/R2g2JPyBUhmiRocnbvv+fhxdPflSoDNFK7L647Wf4SVjZI9eiipIlvb0fRis11JJRlyOZTCbi0hLjpdRtP8dPQGqoBTc9gOVE9GL0IiZhfmOM91Ot9LY8ZWL7hp/rBpAaakWoIhOjqwd9j/oOeqtS5DpkdSG1KSUcl2e36PeXL7Xd2cPZhbZvfXPzZdvnXActUhVde9QdVtF9NJqUf5yswhLBWKKgwTlRXgkvyzV1d/Z4b2qo3XhpNj/9U5MdL89bUcBIrC8c7tARfjSacCNrz9PAV8qYLAxQ7FDRIjnhNXlK96ZPNtPLypP2br0+GP/Bh/5BnLqYHxbSiMmUSlbHsEszLHV59bdA/YtpdSNbmKdkCVk9D5ZOC0K7CdefnUF7EmiFqky1uwMgvDrGN1kBNN/E6Cxu12Zn61QDaxpZgsbVf16pm9mdmlw/SdGt9aW32ef79fqJdVp2fIWe+0aT2OAfb/RQ/WyvNj+/qdq7gfn52nN112R9vnaT8UMl0ZKzLq92Mlz1VSWXlqg859rZQF4UVedETOiPpHGFlujW+HxuqzBIzlP0jpSNpfyzp5K4Z54Wx4fxWgLLly/W39YlLKlEB0ODvxUGRemMXhWJZZWrF29F1P7o0Do+hVpyQeXEA5arnlHFjWOkPjAfhXeDg3kUQLnxRYMrNDQujgvZ38VL+nXxrfqsXUgqqexJiqGR9Oh+bkuYlKSl88FU9pTkVSulHTwR31Iq8+XzT/TLAhFvkirhqhW73shVh82VHJEtaDuo5W7W4wJBIUNRtiQsjg+J9LnRpbZjUtqlRoHooWXd5CqdJ7P6mUpFUH9eacC82G/iDuUqh0LvBaGkiMWbzDvuSq2Fy3KiJ+zCVWB0xEDvhC6jSGoSR6dyiOwG9e09qoJBEQlpXNd3TOIFIZXPaU/8SsmZXCmz+lGyq378kVcMrj6+DolvNLkTN4X1p4kb1cCVfItBoCz9y0UHM8OdJr4ZXAVIMeXa5aSErEeqY/H8NdWiNCGS6pxikqhQc1XRqPwgPjOavdEUVCgUdUv4XBmkGvwmT9uLKCJoXJEryqS4e2NEUVy1nNqLPGS5OooaBzJr1gDZaw6NuMkPTFUwb6jgJSVH2BE/Cjm0M64jRVUQ6VK5iUyxKkrqaCeUpL0X+k1TczYrqoR9JPvqnmkiTpWwOJS6KZ4onpdbzi1koozB6jR9Blk6ClsOasZsbVmkBhSKBBnu6lkCi0tCSBGE8rzdYOXcOLcumVwRXUMnie6pbuJpYVYn8ql4rH7EQ6gsiaRNR7Y9XJFWqaKCNdJpW6zw46rBS6baZ8hV91HMdrlczfsy/XkWBHVixAcJERrckKIghAJ/WA0q0ok2Rm5JGwZXcd2yL+5IFfXzU7lY2DYOYqy3yKn18PyNulZKGykrlPzcbUoQiHEyF49Mrj4Dj8tVsBZIACdCoVBZIiRA5UX1GIQTUlPZ07z2LkN/T8mZcco7pKUjlkO6ju0GPgQPxfM4bR4SyzpXeRGJ8o1aq6k2xIoKVnJ1pjvc3U0Z67uQDKpkqdcStl7Y2kWwqPeIMSIiIUiq0+FeOCfq7poknVPP64ra6SlFda6E4KxkhnqKroIlSdexU+qKrgyh/Lvz/Wfihs5VLhQacveA/wHMteaG2rIiDa9+Ozo6OvgSDZiRs5w8MMVqJpqBjfmCNXA6a+KDFsuVFW3/2eXs5uE2tWOFvUvNY1g/vTRjQ0X330vlivqxUtynHsPK4eblmfCqpstevBiq3agXmn3iPQhCLxPLciYSpZjI2N5nJvpn2EBfjIkQSaWlu3h/5tlkWzdmhS3Nji1uNfqbVK48I/ZrYdnbt5IUHRNjMUnWNyUlOZaUjQN0c3XGwKNVhxS25UMXStepXU+S8vtrnO6NBc/oJjJ28VDDyOevSkTffPil//OwHDW21w7WRk1U2cSDHuG2COpCXSO9WSkndm50mkDW27LLwzOdmnpRl1yOdevb4c5v0YkRc39nVQpIBhxnkzbGpfTVNXyjdNdV181WkJY9LTtO9PaYrudoZtjc7l5Nxg4MvzT8QE8m85KkKDTgfRf/H5j0TPFFxvqNMS7cHc30mvT0fFGqM4an1Tmi8HPJKtWkDSX8pZG99FTBSPXI5GcmKX83t4+GlVFLxv6SXLmiI+EdmSO5nPMcBTMXZh6mcy2TNOkJH0STq5aMuWZHKcTiTy4c3BQmPRNXsvTFjJY7/8r8ZW6HVxPRGZOrg7EmF0Chu8KVtwrG+s1guWciY1rzjp4vEatM0dnvbq7U+pfTuMd3uyA+AR1NV+CRiqOewx51HE7DQ0+YPj89sY/sFoRFthO73QDcv+vofPHQjSs5YiATPTC9hO9KssPc7htWHhrb4c6LJuaKKuG2w2AVikiygTbATR0q9gGsOLjKbiXAeRLOM4TEMThGLuGpoD+cS6lFY9D9M6tZ8BDsxzkHV4WiG1eJMQOx0W99OjpGI9XvPT0z6vaDteTEiLG/bybWjKqA+M5p3CsIAwRsHd2W7CNI6nKKVZ45D5UZrt6LzDE4+oLTyFRW2AW9YNF2X7VKuLX/meOu3Uy7LFX/3a/joLcaNZCUk9Gq/q0alZWohWYqSAfCnNNgFZhuRWvqxxlIOmLyxFlRdSgBViBX6UFmLjA5tB/1lX0ESwtsvs5IfelsQF+TOIN+N09UTn7u7A6rqZfOmWFzjKOfExYoPU3GPgZIaTDuCzBeRwkrldCUqkVHeY0Nn9Jschcr9kHAIgrNCev7gCvxnX0JaLwxct50yaWCKicfmOPdt6gV4MnSyJqB1ahLvZkH0uC5l5j0IjFYmbXvFaOphjr9vmMSOUYMV464Vjy2BAt0hoorbBKK2GHR4g7oAOWd/ZfcXIao5Rv02zkWNNFt4tv1uBJ2oTqphVCKOpSqRqqOG6axMhHBtoNJlLcEA/SFpoJMgQ8p9hWYjIvYkDMsuZmrXsunAmNc5m9zb3e/ywQZLjhclaA+oZAmNkCqRDpaOdFYQAGiI6SXnEsXyJZRfhwH5irQpVaIwCWKfMFpVEE390pWDkxXvWfYFqDMmulpdX/JcE/kg8PV+iBj3d8wVNHRYKXhjFrjrYpPAVcNqSXLBwYsovwnIXUOuXoNuILyl2+VKxy1whporhJWXWtm9JpcsWkz8ZxqGPga+tTQ/j+cFS/iIBjWG5/E7BaYK3LlmOVC7AsUTqDJH2wIYvlcyZFh0yUPP7SVJVPtMJPqBxPt5Oh5XKUYtwEtgW+IQ5XAm0kOnZFnjVySc83mBYFuayoIxSdk9zAAzRXnll24UkbMenv3l6TN1XBH2OSqHXPF5UqtegFAqqTDxtYbvIVU5NzmiuP8GDYHsIjKFeHFCZTg3+0uSlDS2+Dqe89jDQ8OorK997NJ1cxFO1TxuXJzg1GZMyuZp4Gqg2VfWOJcTSym2SNoyOExINBHhTGYjfG+W+g8YUY4SdvhlKWZsOEx/Bltx1zxuQp2cbnCeIrTuM5vG7AuvMh9EKI+MRxwVXMFRmCogky4B0cNL65kZAB0lBn+85GB9swVnyt1bi3n8XkKyGggPMl2sJ5yBU98lxZeA49B/R2gZyfacbNQgtNleblcV1/UBKgMoomYBVmGJUMv8LlaX2r8oTDa5DVloxfeI/ELd1hJC2B0Q+XnwjoUHzQ0aOGccfg4KbeS6wxGA3aOgl5BXVmS0VeXgPSHN1l8roSFhs75ChgEGohqO2DIt+NbF/2gthucTPZf0KiOGX9FC0zQtcEpanpVcWJ/9xq4gLkEWbpYNfavxryDHReuGKdQA+ZK1TFwp6WFaaAK4u+GWSm4rDdGiTi05FfO4dftho85JYLm6XasjPaYzgOTzpOTB+b+Hu/AkOMD63DOvMSnvFZpGcMWUBUsE1x0W5tNgFHEicNWyqEBvrlqkutTISe/WNWHYUbXola168BbrsSNhjhYR8WRRpE/chpl90FIXZ4TloEOikvGlaFisUsaoFjVUq3MSHAraS6+bbZYPhL7anLVFwP7qQqaMVD3w+Z5Pu2JnDlkU2Cm2NokxuOcVscBRqwYs2FK7CKC0uM2Ux9tBr0NtHbDO9wbblqbiEStgvMIdNRlxZw1Gu5onmrX4GKu0pfO+0b7ja3iMFMTSjm4Kutc/QZ9itNLvuhgynS20srcdFLi3vBkk3Op+NiZGSg+eMKSN+DXuwEluFylpxpcbTzfMPwE92yVwtrkR2hiqenWWgFLghOVZf70V9VcFTZaMFeozJ+M6HJdDfJYv5WvgioYwDFL3lYnvMWKEy+oVHFmXuIlZ7P30DbPqgkpaGKxMekPJu/2C4unXEJQrcCO+xjZYDxcl2lQi5fuBkuOfTMt+Ncx1mOwsqYX3osIxEOO9mcPeQEcnnfMCSrUgAYGjtcpVoALi7HG1TrM/U65TZNS3dxJAv2PIRtMnoZ3wyoaFdgsDEYC1Y5OfdJx55ckY67WDK46H1czRuMm8xk4Ep0+5Mozlj6w7S6Zn2J/g2IJ1noaMglY2dWWIvOufUl/Iei0n6csvA/Bi/LNlTr90nFdecwMZKK9Dx4/ftCjgrXgE997DHy9MBsn3ajiTVZLHyZc7O9sELZbrrPjP6Fg1UXLdOVBGKOuyAl2cZZC4vIW606S53ZHcajFLuZKqwGz14yM9Jt4WKUYVhFj6lvJYQMX/QdmFTHqVgETTxokOvsBygZ8LDwPSwKFfa9RS3fc4YNuqlrMmy6MaouMx2Dor47nMKDmBTj6fXc5DWFPp554CR9FM/wA2dwZSf7XbNtTdXsDAWkoiGS3y9BF2oB6xkQ5XZ7GUHPcV6BiXWk9cKy7aq5KwFzB+DjNyFsl6LxjEw4ljIBql9cYJ0e/Wb6DW1uUd3oMLFVKZREqGq6nrIbLNU8fWwsJngFjr+gzLhvXrWnmCk42gxn1NBBulHAzV+rgzfwGGWvhafd/vaKXSNX2Vd3cd7LrVMEtSBXaZRdaq49kYH3PewG2qKbUoXNa0wtA6c0G363u8BigvG9Bycw1mTgNE4V0jLNEpftvj+SnnHhoz8xycd+x5PyVtpg5C+r0jjM4YKMhsxDcyppGFEqrMzvs76eG/jSoL6qzRS0YTaTfAaeDdDWZhsjk3CIxa7XNgVcGIRJbs2RwzEWsxBOHx7TCDPnaTJhgDSqhYiRGGQ10cxtVx30LXNBavf/JESNrAc4H6IdBc5WH99TsRUvMCJupWuVST3MViPaZvup3t5daJByWnZ0JYxC5A2NoIzO6fgI1U0nYUGAHJC6AcpnmMegPtemYUyNtC/GcS0Y9DVWwiblSbwuUfCMjVlTc65FBULNbJldu2QZx0KH8MLARzcXj2XnIVV2jlykhlOMAk4yPHReA/KmZBAOHbGCO61lhOgF/J+BEwTqu1zoP2zLIgcdmEu/PYQ8VlJWH2jIANeE3zDdXerQLUGfqSilzN6OEkppHXoauN2ECyhLLVXAeeld2M9a6o1lBmIa5LDjPjTH5Hit6bHcETfQ8MPDVy1zJsc9m48dRfhOnnYQxoAje3zCOGOv+UgjuwpZ55iIMV+LZFkxEgCIQY901cwWnDBE4ORpOu2q2nl1DxZJOKWnBKzElw7bcFurEMAjoySHtvQEmYP1PNdBQzzBh06osV8cb0L18ZTd7yYwN0hshzkwZAhn1N1AFhzxXtdqvZ2inluXRFjuW4iiiPZgRxMj6PgEDHblaLIKmcOadxpUEGovnEvgyC9vNwu7m1ZXjsA9gwTdgZyeeS3r+aPWlA+1A3GD6LSZCACyNH8vwWD6Xh18d2frlHDxYhOcxddgteJE9ypUCmwJzBS8RqnhRpZr3f5wspwbeHUy19EanNoDxjS6nvVVstvZGmZapIlOu4fr/PVZC/yhXaP8uvznzPW/eyg9TdWeNlY4WXxfmU6XCOw/ZIrD+DoU7jX/Ic0D3gCpKlkt9pS3gVhy6O4BK6LquA0a1u26rTDzP/chfAkCq3F9peOewcoWvoYdIuuH3Sfxi6Er8qGhhErq7gQ0flR/8wwkU2LgvpsrGeleo/b8HQFSo7pX+mZh7kmjvHzowSSzcP6EyMDclcf8dzkWmlIWmtaI7jnTlbbklTcSIlO81UyoWl3dDxOOf4tQ/1csv3K9/EOIjO1C6DCHXfyCkEoXyO3N35gVX10V2YPowr/0DKEJmnhlj9X9ACZHOK9Px+/nvcG7IxgcGtgeL+bIkEQ2SFMoXn24PDPh//8lDNq3+F298QIO6lc76PPnw4cPHL4Sgj1Zx2z+VDx8+fPjw4cOHDx8+fPjw4cOHDx8+fPjw4cOHDx8+fPjw4cOHE/8DT595/1MDGYQAAAAASUVORK5CYII=" rel="shortcut icon" type="image/x-icon">
+    <link href="/img/favicon.jpg" rel="shortcut icon" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
     <title>Siêu thị điện máy</title>
 </head>
 <body class="background">
-    <div class="header">
-        <img src="https://img.tgdd.vn/imgt/f_webp,fit_outside,quality_100/https://cdn.tgdd.vn/2023/02/banner/Banner-BIG-DESKm-1920x450.png" alt="">
-    </div>
-    <div class="menu">
-        <div class="menu-item">Tivi</div>
+    <form action="">
+        <label for="gsearch"></label>
+        <input type="search" id="gsearch" name="gsearch" placeholder="Bạn cần tìm gì?">
+    </form>
+        <div class="header"></div>
+        <div>
+            <img class="shop-name" src="/img/brand-shop.png" alt="shop name"></div>
+        <div class="menu">
+            <div class="menu-item dropdown">
+            Phân loại sản phẩm
+            <ul class="menu--item-topleft">
+                <li class="item-topleft">Hãng</li>
+                <li class="item-topleft">Giá tiền</li>
+                <li class="item-topleft">Tính năng</li>
+            </ul>
+            </div>
+        <div class="menu-item"> Tivi</div>
         <div class="menu-item">Tủ lạnh</div>
         <div class="menu-item">Máy giặt</div>
         <div class="menu-item">Điều hòa</div>
@@ -22,42 +34,36 @@
         <div class="menu-item">Tủ đông, tủ mát</div>
         <div class="menu-item">Thiết bị âm thanh</div>
         </div>
+    
     <table>
         <tr>
-            <td>
-                <a href="/san-pham/san-pham-1.html"><img src="https://img.tgdd.vn/imgt/f_webp,fit_outside,quality_100/https://cdn.tgdd.vn/Products/Images/1942/297318/google-tivi-toshiba-4k-43-inch-43c350lp-10-550x340.jpg" alt=""> <p>Google Tivi Toshiba 4K 43 inch 43C350LP</p>
-                <p>
-                <b >
-                9.300.000₫
-                </b></p></a>
+            <td >
+                <a class="list-top" href="/san-pham/san-pham-1.html"><img src="/img/google-tivi-toshiba-4k-43-inch-4.png" alt="Tivi Toshiba google-tivi-toshiba-4k-43-inch-4"><p>Google Tivi Toshiba 4K 43 inch 43C350LP</p>
+                <b>9.300.000₫</b>
+                </a>
             </td>
             <td>
-                <a href="/san-pham/san-pham-2.html"><img src="https://img.tgdd.vn/imgt/f_webp,fit_outside,quality_100/https://cdn.tgdd.vn/Products/Images/1943/201134/samsung-rs62r5001b4-sv-19-300x300.jpg" alt=""> <p>Tủ lạnh Samsung Inverter 655 lít RS62R5001B4/SV</p>
-                    <p>
-                    <b>
-                        23.990.000₫
-                        </b></p></a>
+                <a class="list-top" href="/san-pham/san-pham-2.html"><img src="/img/samsung-rs62r5001b4-sv-19-300x30.png" alt="samsung-rs62r5001b4-sv-19-300x30"> <p>Tủ lạnh Samsung Inverter 655 lít RS62R5001B4/SV</p>
+                    <b>23.990.000₫</b>
+                </a>
             </td>
             <td>
-                <a href="/san-pham/san-pham-3.html"><img src="https://img.tgdd.vn/imgt/f_webp,fit_outside,quality_100/https://cdn.tgdd.vn/Products/Images/1944/197893/toshiba-tw-bh95s2v-wk-10-300x300.jpg" alt=""> <p>Máy giặt Toshiba Inverter 8.5 Kg TW-BH95S2V WK</p>
-                    <p><b>
-                        7.490.000₫
-                        </b></p></a>
+                <a class="list-top" href="/san-pham/san-pham-3.html"><img src="/img/toshiba-tw-bh95s2v-wk-10-300x300.png" alt="toshiba-tw-bh95s2v-wk-10-300x300"> <p>Máy giặt Toshiba Inverter 8.5 Kg TW-BH95S2V WK</p>
+                    <b>7.490.000₫</b>
+                </a>
             </td>
             <td>
-                <a href="/san-pham/san-pham-4.html"><img src="https://img.tgdd.vn/imgt/f_webp,fit_outside,quality_100/https://cdn.tgdd.vn/Products/Images/2002/271496/daikin-inverter-1-hp-ftkb25wmvmv31-550x160.jpg" alt=""> <p>Điều hòa Daikin Inverter 8500 BTU FTKB25WMVMV</p>
-                    <p><b>
-                        10.990.000₫
-                        </b></p></a>
+                <a class="list-top" href="/san-pham/san-pham-4.html"><img src="/img/daikin-inverter-1-hp-ftkb25wmvmv.png" alt="daikin-inverter-1-hp-ftkb25wmvmv"> <p>Điều hòa Daikin Inverter 8500 BTU FTKB25WMVMV</p>
+                    <b>10.990.000₫</b>
+                </a>
             </td>
             <td>
-                <a href="/san-pham/san-pham-5.html"><img src="https://img.tgdd.vn/imgt/f_webp,fit_outside,quality_100/https://cdn.tgdd.vn/Products/Images/2162/214631/dalton-ts-15g600x-12-1-600x600-1-600x600.jpg" alt=""> <p>Loa kéo karaoke Dalton TS-15G600X 600W</p>
-                    <p><b>
-                        9.300.000₫
-                        </b></p></a>
+                <a class="list-top" href="/san-pham/san-pham-5.html"><img src="/img/dalton-ts-15g600x-12-1-600x600-1.png" alt="dalton-ts-15g600x-12-1-600x600-1"> <p>Loa kéo karaoke Dalton TS-15G600X 600W</p>
+                    <b>9.300.000₫</b>
+                </a>
             </td>
         </tr>
     </table>
-    
+  
 </body>
 </html>
