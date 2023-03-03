@@ -1,5 +1,5 @@
 .background{
-    background-image: url(/img/background.jpg);
+    background-image: url(./img/background.jpg);
     margin: 0;
 }
   .header{
@@ -53,7 +53,7 @@
     box-shadow: 1px 1px rgb(117, 111, 111);
   }
   .icon-buy{
-    background-image: url(/img/gio-hang.png);
+    background-image: url(./img/gio-hang.png);
     background-size: contain;
     background-repeat: no-repeat;
     border-radius: 4px;
