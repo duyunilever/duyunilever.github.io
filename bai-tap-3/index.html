@@ -6,63 +6,259 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="./img/favicon.jpg" rel="shortcut icon" type="image/x-icon">
     <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./icon/fontawesome-free-6.3.0-web/fontawesome-free-6.3.0-web/css/all.min.css">
+    <link rel="stylesheet" href="./icon/tabler-icons-2.7.0/webfont/tabler-icons.min.css">
     <title>Siêu thị điện máy</title>
 </head>
 <body class="background">
-    <form action="">
-        <label for="gsearch"></label>
-        <input type="search" id="gsearch" name="gsearch" placeholder="Bạn cần tìm gì?">
-    </form>
-        <div class="header"></div>
-        <div>
-            <img class="shop-name" src="./img/brand-shop.png" alt="shop name"></div>
-        <div class="menu">
-            <div class="menu-item dropdown">
+    <div class="header">
+        <div class="menu-top">
+                <ul>
+                    <li><i class="fa-solid fa-money-check-dollar"></i>Thông tin khuyến mãi</li>
+                </ul>
+                <ul>
+                    <li><i class="fa-solid fa-bell"></i> Thông báo</li>
+                    <li><i class="fa-solid fa-cart-shopping"></i> Giỏ hàng</li>
+                    <li><i class="fa-solid fa-user"></i> Đăng nhập</li>
+                    
+                </ul>
+        </div>
+        <form action="">
+            <label for="gsearch"></label>
+            <input type="search" id="gsearch" name="gsearch" placeholder="Bạn cần tìm gì?">
+        </form>
+        <div class="welcome">Chào mừng đến với shop, chúc bạn 8/3 vui vẻ!!!
+        </div>
+    </div>
+    <div>
+        <img class="shop-name" src="./img/brand-shop.png" alt="shop name">
+    </div>
+    <div class="menu">
+        <div class="menu-item dropdown" style="border-right: 2px solid rgb(248, 243, 243); margin-right: 3px;"><i class="fa-solid fa-bars"></i>
             Phân loại sản phẩm
             <ul class="menu--item-topleft">
-                <li class="item-topleft">Hãng</li>
-                <li class="item-topleft">Giá tiền</li>
-                <li class="item-topleft">Tính năng</li>
+                <li class=" item-topleft"><i class="fa-solid fa-sign-hanging"></i> Hãng
+                <ul class="dropdown">
+                    <li class="menu--item-topleft">Samsung</li>
+                </ul>
+                </li>
+                <li class="item-topleft"><i class="fa-solid fa-sack-dollar"></i> Giá tiền</li>
+                <li class="item-topleft"><i class="fa-solid fa-book"></i> Tính năng</li>
             </ul>
-            </div>
-        <div class="menu-item"> Tivi</div>
-        <div class="menu-item">Tủ lạnh</div>
-        <div class="menu-item">Máy giặt</div>
-        <div class="menu-item">Điều hòa</div>
-        <div class="menu-item">Đồ gia dụng</div>
-        <div class="menu-item">Máy lọc nước</div>
-        <div class="menu-item">Tủ đông, tủ mát</div>
-        <div class="menu-item">Thiết bị âm thanh</div>
         </div>
+        
+        <div class="menu-item"><i class="ti ti-device-tv"></i>Tivi</div>
+        <div class="menu-item"><i class="ti ti-fridge"></i>Tủ lạnh</div>
+        <div class="menu-item"><i class="ti ti-wash-machine"></i>Máy giặt</div>
+        <div class="menu-item"><i class="ti ti-air-conditioning"></i>Điều hòa</div>
+        <div class="menu-item"><i class="ti ti-microwave"></i>Đồ gia dụng</div>
+        <div class="menu-item"><i class="ti ti-device-mobile-charging"></i>Điện thoạic</div>
+        <div class="menu-item"><i class="ti ti-snowflake"></i>Tủ đông, tủ mát</div>
+        <div class="menu-item"><i class="ti ti-headphones"></i>Thiết bị âm thanh</div>
+    </div>
     
-    <table>
-        <tr>
-            <td >
-                <a class="list-top" href="./san-pham/san-pham-1.html"><img src="./img/google-tivi-toshiba-4k-43-inch-4.png" alt="Tivi Toshiba google-tivi-toshiba-4k-43-inch-4"><p>Google Tivi Toshiba 4K 43 inch 43C350LP</p>
-                <b>9.300.000₫</b>
-                </a>
-            </td>
-            <td>
-                <a class="list-top" href="./san-pham/san-pham-2.html"><img src="./img/samsung-rs62r5001b4-sv-19-300x30.png" alt="samsung-rs62r5001b4-sv-19-300x30"> <p>Tủ lạnh Samsung Inverter 655 lít RS62R5001B4/SV</p>
-                    <b>23.990.000₫</b>
-                </a>
-            </td>
-            <td>
-                <a class="list-top" href="./san-pham/san-pham-3.html"><img src="./img/toshiba-tw-bh95s2v-wk-10-300x300.png" alt="toshiba-tw-bh95s2v-wk-10-300x300"> <p>Máy giặt Toshiba Inverter 8.5 Kg TW-BH95S2V WK</p>
-                    <b>7.490.000₫</b>
-                </a>
-            </td>
-            <td>
-                <a class="list-top" href="./san-pham/san-pham-4.html"><img src="./img/daikin-inverter-1-hp-ftkb25wmvmv.png" alt="daikin-inverter-1-hp-ftkb25wmvmv"> <p>Điều hòa Daikin Inverter 8500 BTU FTKB25WMVMV</p>
-                    <b>10.990.000₫</b>
-                </a>
-            </td>
-            <td>
-                <a class="list-top" href="./san-pham/san-pham-5.html"><img src="./img/dalton-ts-15g600x-12-1-600x600-1.png" alt="dalton-ts-15g600x-12-1-600x600-1"> <p>Loa kéo karaoke Dalton TS-15G600X 600W</p>
-                    <b>9.300.000₫</b>
-                </a>
-            </td>
-        </tr>
-    </table>
+    <div class="hot">
+        <div class="hot-title"><i class="fa-solid fa-burst"></i>Giảm giá SỐC</i></div>
+        <div class="tr">
+            <a href="./san-pham/san-pham-1.html">
+                <div class="td">
+                    <div class="dropdown ">
+                        <img class="icon-i" src="./img/icon-i.jpg" alt="">
+                        <div class="menu--item-topleft">
+                            <img src="./img/logo-toshiba.png" alt="">
+                            <div>- Hãng: Toshiba
+                            <br>
+                            - Kích thước: 43"
+                            <br>
+                            - Độ phân giải: 4K
+                            <br>
+                            - Hệ điều hành: GG TV
+                            </div>
+                        </div>
+                    </div>
+                    <div class="list-top">
+                        <img src="./img/google-tivi-toshiba-4k-43-inch-4.png" alt="Tivi Toshiba google-tivi-toshiba-4k-43-inch-4">
+                    </div>
+                    <div class="p">
+                       <p>Google Tivi Toshiba 4K 43 inch 43C350LP</p>
+                        <div class="b">9.300.000₫
+                        </div>
+                    </div>
+                </div>
+            </a>
+
+            <a href="./san-pham/san-pham-2.html">
+                <div class="td">
+                    <div class="dropdown ">
+                        <img class="icon-i" src="./img/icon-i.jpg" alt="">
+                        <div class="menu--item-topleft">
+                            <img src="./img/logo-ss.png" alt="">
+                            <div>- Hãng: Samsung
+                            <br>
+                            - Thể tích: 655 lít
+                            <br>
+                            - Kiểu tủ: SBS
+                            <br>
+                            - Màu: Đen
+                        </div>
+                        </div>
+                    </div>
+                    <div class="list-top" >
+                        <img src="./img/samsung-rs62r5001b4-sv-19-300x30.png" alt="samsung-rs62r5001b4-sv-19-300x30">
+                    </div>
+                    <div class="p">
+                        <p>Tủ lạnh Samsung Inverter 655 lít RS62R5001B4/SV</p>
+                        <div class="b">23.990.000₫</div>
+                    </div>
+                </div>
+            </a>
+            
+            <a href="./san-pham/san-pham-3.html">
+                <div class="td">
+                    <div class="dropdown ">
+                        <img class="icon-i" src="./img/icon-i.jpg" alt="">
+                        <div class="menu--item-topleft">
+                            <img src="./img/logo-toshiba.png" alt="">
+                            <div>- Hãng: Toshiba
+                            <br>
+                            - Khối lượng giặt: 8.5Kg
+                            <br>
+                            - Kiểu: Cửa trước
+                            <br>
+                            - Màu: Trắng
+                        </div>
+                        </div>
+                    </div>
+                    <div class="list-top">
+                        <img src="./img/toshiba-tw-bh95s2v-wk-10-300x300.png" alt="toshiba-tw-bh95s2v-wk-10-300x300">
+                    </div>
+                    <div class="p">
+                        <p>Máy giặt Toshiba Inverter 8.5 Kg TW-BH95S2V WK</p>
+                        <div class="b">7.490.000₫</div>
+                    </div>
+                </div>
+            </a>
+
+            <a href="./san-pham/san-pham-4.html">
+                <div class="td">
+                    <div class="dropdown ">
+                        <img class="icon-i" src="./img/icon-i.jpg" alt="">
+                        <div class="menu--item-topleft">
+                            <img src="./img/logo-daikin.png" alt="">
+                            <div>- Hãng: Daikin
+                            <br>
+                            - Công suất: 8500BTU
+                            <br>
+                            - Công nghệ: Inverter
+                            <br>
+                            - Màu: Trắng
+                        </div>
+                        </div>
+                    </div>
+                    <div class="list-top">
+                        <img src="./img/daikin-inverter-1-hp-ftkb25wmvmv.png" alt="daikin-inverter-1-hp-ftkb25wmvmv">
+                    </div>
+                    <div class="p">
+                        <p>Điều hòa Daikin Inverter 8500 BTU FTKB25WMVMV</p>
+                        <div class="b">10.990.000₫</div>
+                    </div>
+                </div>
+            </a>
+
+            <a href="./san-pham/san-pham-5.html">
+                <div class="td">
+                    <div class="dropdown ">
+                        <img class="icon-i" src="./img/icon-i.jpg" alt="">
+                        <div class="menu--item-topleft">
+                            <img src="./img/logo-dalton.png" alt="">
+                            <div>- Hãng: Dalton
+                            <br>
+                            - Công suất: 600W
+                            <br>
+                            - Kiểu loa: Di động
+                            <br>
+                            - Bluetooth: Có
+                        </div>
+                        </div>
+                    </div>
+                    <div class="list-top">
+                        <img src="./img/dalton-ts-15g600x-12-1-600x600-1.png" alt="dalton-ts-15g600x-12-1-600x600-1">
+                    </div>
+                    <div class="p">
+                        <p>Loa kéo karaoke Dalton TS-15G600X 600W</p>
+                        <div class="b">9.300.000₫</div>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </div>
+    <div class="not-hot">
+        <div class="not-hot-title">Sản phẩm bán chạy</div>
+        <div class="tr">
+            <a href="./san-pham/san-pham-1.html">
+                <div class="td">
+                    <div class="list-top">
+                        <img src="./img/google-tivi-toshiba-4k-43-inch-4.png" alt="Tivi Toshiba google-tivi-toshiba-4k-43-inch-4">
+                    </div>
+                    <div class="p">
+                        <p>Google Tivi Toshiba 4K 43 inch 43C350LP</p>
+                        <div class="b">9.300.000₫</div>
+                    </div>
+                </div>
+            </a>
+
+            <a href="./san-pham/san-pham-2.html">
+                <div class="td">
+                    <div class="list-top" >
+                        <img src="./img/samsung-rs62r5001b4-sv-19-300x30.png" alt="samsung-rs62r5001b4-sv-19-300x30">
+                    </div>
+                    <div class="p">
+                        <p>Tủ lạnh Samsung Inverter 655 lít RS62R5001B4/SV</p>
+                        <div class="b">23.990.000₫</div>
+                    </div>
+                </div>
+            </a>
+            
+            <a href="./san-pham/san-pham-3.html">
+                <div class="td">
+                    <div class="list-top">
+                        <img src="./img/toshiba-tw-bh95s2v-wk-10-300x300.png" alt="toshiba-tw-bh95s2v-wk-10-300x300">
+                    </div>
+                    <div class="p">
+                        <p>Máy giặt Toshiba Inverter 8.5 Kg TW-BH95S2V WK</p>
+                        <div class="b">7.490.000₫</div>
+                    </div>
+                </div>
+            </a>
+
+            <a href="./san-pham/san-pham-4.html">
+                <div class="td">
+                    <div class="list-top">
+                        <img src="./img/daikin-inverter-1-hp-ftkb25wmvmv.png" alt="daikin-inverter-1-hp-ftkb25wmvmv">
+                    </div>
+                    <div class="p">
+                        <p>Điều hòa Daikin Inverter 8500 BTU FTKB25WMVMV</p>
+                        <div class="b">10.990.000₫</div>
+                    </div>
+                </div>
+            </a>
+
+            <a href="./san-pham/san-pham-5.html">
+                <div class="td">
+                    <div class="list-top">
+                        <img src="./img/dalton-ts-15g600x-12-1-600x600-1.png" alt="dalton-ts-15g600x-12-1-600x600-1">
+                    </div>
+                    <div class="p">
+                        <p>Loa kéo karaoke Dalton TS-15G600X 600W</p>
+                        <div class="b">9.300.000₫</div>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </div>
+<div class="messenger">
+    <i class="fa-brands fa-facebook-messenger"></i>
+</div>
+
 </body>
 </html>

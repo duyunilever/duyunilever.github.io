@@ -1,37 +1,57 @@
 body{
     margin: 0;
 }
+.drop{
+    display: inline-block;
+    position: relative;
+}
+
+.drop-content{
+    display: none;
+    position: absolute;
+    left: 0;
+    z-index: 1;
+    width: 100vw;
+}
+.drop:hover .drop-content {
+    display: block;
+}
+
 
 .layout1, .layout2, .layout3, .layout4{
-    width: 100%;
+    
     display: flex;
     height: 400px;
     color:white;
     align-items: center;
-    justify-content: center;
+    
 }
 
 .box1, .box2, .box3, .block1, .block2{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    flex: 1;
+    
     height: 100%;
     text-align: center;
 }
 
 .box1{
     background-color: red;
+    width: 60%;
 }
 
 .box2{
     background-color: green;
+    
 }
-
 .box3{
     background-color: blue;
 }
 
 .layout4 .box3, .layout4 .box2, .block2{
     margin-left: 15px;
+}
+.layout1 .block1,.block2{
+    width: 40%;
 }
