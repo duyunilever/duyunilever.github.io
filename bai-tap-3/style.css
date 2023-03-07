@@ -46,7 +46,7 @@ input{
   color: white;
   display: flex;
   justify-content: flex-end;
-  background-color:
+  
 }
 .menu-top li{
   font-weight: bolder;
@@ -205,12 +205,9 @@ input{
 }
 
 .tr{
-    height: 30vw;
-    width: 100%;
     display: flex;
     justify-content: space-around;
     margin: 15px 0;
-
 }
 
 ul {
@@ -218,16 +215,15 @@ ul {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    
 }
 a{
   width: calc((100%-25)/5);
   text-decoration: none;
-  margin-left: 25px;
+  margin-left: 3vw;
   box-sizing: border-box;
 }
 a:last-child{
-  margin-right: 25px;
+  margin-right: 3vw;
 }
 
 .icon-i{
@@ -260,8 +256,7 @@ div.menu--item-topleft {
   border: #1097ebdd solid 1px;
 }
 .hot{
-  
-  margin: 20px;
+  margin: 1vw 3vw;
   border-radius: 20px;
   background-image:linear-gradient(180deg, rgba(79, 79, 241, 0.459), rgba(189, 189, 224, 0.532)) ;
   padding-bottom: 0.1vw;
@@ -271,7 +266,7 @@ div.menu--item-topleft {
 
 }
 .not-hot{
-  margin: 10px 20px;
+  margin: 1vw 3vw;
   border-radius: 20px;
   background-image:linear-gradient(180deg, rgba(35, 114, 234, 0.459), rgba(189, 189, 224, 0.532)) ;
   padding-bottom: 0.1vw;
@@ -323,7 +318,7 @@ div.menu--item-topleft {
 }
 .messenger{
   position: fixed;
-  top: 45vw;
+  top: 40vw;
   right: 1vw;
   color: rgba(12, 101, 234, 0.548);
   font-size: 4vw;

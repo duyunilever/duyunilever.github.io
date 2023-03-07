@@ -1,0 +1,27 @@
+.img1{
+    width: 20%;
+    height: 20%;
+    object-fit: contain;
+    margin: 3px;
+  }
+  .notice{
+    background-color: white;
+    display: flex;
+    display: none;
+    position: absolute;
+    right: 0;
+    z-index: 6;
+    width: 20vw;
+    height: 20vw;
+  }
+  .notice-content{
+    color: #111111;
+    overflow: hidden;
+  }
+  .open-notice{
+    position: relative;
+  }
+  .open-notice:hover .notice{
+    display: block;
+    
+  }
