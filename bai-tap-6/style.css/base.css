@@ -35,8 +35,8 @@ body{
 }
 .header{
     display: flex;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
+    padding-top: 1.5vw;
+    padding-bottom: 1.5vw;
     border-bottom: 1px solid rgba(129, 128, 128, 0.516);
 }
 .body{
@@ -128,7 +128,7 @@ body{
     margin-bottom: 1.5vw;
     
 }
-div.more:hover {
+.more:hover {
     color: var(--color-main);
 }
 .cooker-bottom{
