@@ -34,20 +34,27 @@ body{
     }
 }
 .header{
+    background-color: white;
+    z-index: 10;
+    width: 100vw;
     display: flex;
     padding-top: 1.5vw;
     padding-bottom: 1.5vw;
     border-bottom: 1px solid rgba(129, 128, 128, 0.516);
+    position: relative;
 }
 .body{
     display: flex;
     margin-right: 3vw;
-    margin-left: -1vw;
+    margin-left: -1vw;     
 }
 .content{
     display: flex;
     flex-direction: column;
     margin-left: 30px;
+    position: absolute;
+    top: 7vw;
+    left: 240px;
 }
 .sponsor{
     display: flex; 

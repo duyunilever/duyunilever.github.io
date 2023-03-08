@@ -63,23 +63,29 @@ input{
 /* body */
     /* navigation */
 .nav{
-    width: 20vw;
+    background-color: white;
+    width: 240px;
+    height: 100vh;
     margin-top: 2vw;
+    position: absolute;
+    z-index: 9;
+    top:5vw;
 }
 ul.nav-list{
     list-style-type: none;
     margin: 0;
     
 }
-.nav-list span{
-    font-size: 1.38vw;
+.nav-list p{
+    font-size: 17.5px;
     margin-left: 1vw;
+    margin-bottom: 0;
 }
 .nav-list{
     cursor:pointer;
 }
 .nav-list-item{
-    font-size: 1.38vw;
+    font-size: 17.5px;
     padding: 0.5vw 1vw;
 }
 .nav-list-item img{
