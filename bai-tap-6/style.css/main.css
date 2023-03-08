@@ -182,10 +182,13 @@ li.nav-list-item:nth-child(3){
     width: 9vw;
     align-items: center;
     align-self: center;
-    padding: 0.9vw;
+    padding: 1vw 1vw;
     border-radius: 0.5vw;
     text-align: center;
+    cursor: pointer;
 }
+.more p{padding: 0;
+margin: 0;}
 
 .cooker-game-img img{
     width: 5.8vw;
