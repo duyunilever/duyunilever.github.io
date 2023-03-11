@@ -18,12 +18,11 @@ body{
     border-bottom: #65676b 1px solid;
 }
 .name{
-    font-size:
+    width: 100%;
+font-size:
 28px;
 font-weight:
 700;
-line-height:
-32.0012px;
 padding: 0 50px;
 }
 .name i{
@@ -140,15 +139,26 @@ padding: 0 50px;
 .intro{
     position: relative;
 }
-.intro-list{
+.intro-list-total{
+    background-color: white;
+    border-radius: 5px;
     width: 100%;
     display: none;
     position: absolute;
     top:0;
-    left: calc(100% + 5px) ;
+    left: calc(100% + 6px) ;
     z-index: 3;
+    padding: 5px;
+    box-shadow:  #00000078 0px 1px 2px 0px;
 }
-.intro:hover .intro-list{
+.intro-list{
+    padding: 5px;
+}
+.intro-list:hover{
+    background-color: #65676b88;
+    border-radius: 5px;
+}
+.intro:hover .intro-list-total{
     display: block;
 }
 .gallery{
@@ -245,6 +255,9 @@ box-shadow:
 padding: 5px;
 border-radius: 10px;
 }
+.like:hover, .mess:hover, search:hover, .threedot:hover{
+    background-color: #65676b6b;
+}
 .new-top{
     display: flex;
     justify-content: space-between;
@@ -269,22 +282,30 @@ border-radius: 10px;
     margin: 0 10px;
     font-weight: 600;
 }
+.creat:hover{
+    background-color: #65676b57;
+}
 .new-bottom{
     display: flex;
     justify-content: space-between;
     padding: 30px;
+    align-items: center;
 }
-.img{
-    display: flex;
-    justify-content: space-between;
-}
+
 .img, .checkin, .tag{
+    margin: auto;
     color:
 #65676b;
 font-size:
 15px;
 font-weight:
 600;
+padding: 5px 15px;
+border-radius: 5px;
+cursor: pointer;
+}
+.img:hover, .checkin:hover, .tag:hover{
+    background-color: rgba(0, 0, 0, 0.219);
 }
 .new-bottom img{
     width: 25px;
