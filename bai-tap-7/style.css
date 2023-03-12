@@ -1,7 +1,11 @@
+*{
+    box-sizing: border-box;
+}
 body{
     display: flex;
     flex-direction: column;
     margin: 0 auto;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 .top{
     display: flex;
@@ -23,7 +27,7 @@ font-size:
 28px;
 font-weight:
 700;
-padding: 0 50px;
+padding-left: 50px;
 }
 .name i{
     color: #1877f2;
@@ -72,10 +76,12 @@ padding: 0 50px;
 .nav{
     display: flex;
     justify-content: space-between;
+    align-items: center;
     padding: 16px 0;
+    flex-wrap: wrap;
 }
 .nav-left{
-    width: 60%;
+    width: 450px;
     display: flex;
 
 }
@@ -113,7 +119,7 @@ padding: 0 50px;
     display: none;
     z-index: 1;
     border-radius: 5px;
-    padding: 5px;
+    padding: 5px 0;
     box-sizing: border-box;
     opacity: 1;
 }
@@ -136,6 +142,7 @@ padding: 0 50px;
     background-color: #65676b;
     border-radius: 5px;
 }
+
 .intro{
     position: relative;
 }
@@ -146,7 +153,7 @@ padding: 0 50px;
     display: none;
     position: absolute;
     top:0;
-    left: calc(100% + 6px) ;
+    left: 100% ;
     z-index: 3;
     padding: 5px;
     box-shadow:  #00000078 0px 1px 2px 0px;
@@ -165,12 +172,14 @@ padding: 0 50px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    border: #8a848480 1px solid;
+    
     border-radius: 10px;
     width: 360px;
     padding: 15px 15px 10px 15px;
     box-sizing: border-box;
     background-color: white;
+    box-shadow:
+#000000 0px 1px 2px 0px;
 }
 .gallery-top{
     width: 100%;
@@ -205,6 +214,7 @@ padding: 0 50px;
 }
 .gallery-bottom-img:hover img{
     transform: scale(1.1);
+    border: 1px solid white;
 }
 .content{
     display: flex;
@@ -215,10 +225,13 @@ padding: 0 50px;
 .nav-right{
     display: flex;
     align-items: center;
-    width: 50%;
+    width: 40%;
+    justify-content: flex-end;
+    
 }
 .like{
-    
+    display: flex;
+    gap:2px;
     background-color: #e7f3ff;
     color:
 #1877f2;
@@ -233,6 +246,9 @@ margin-right: 5px;
 cursor: pointer;
 }
 .mess, .search, .threedot{
+    display: flex;
+    gap:2px;
+    flex-wrap: nowrap;
     background-color: #e4e6eb;
     font-size: 15px;
     font-weight: 600;
@@ -241,6 +257,10 @@ cursor: pointer;
     margin-right: 5px;
     box-sizing: border-box;
     cursor: pointer;
+    
+}
+.mess{
+    min-width: 110px;
 }
 .new{
     display: flex;
@@ -255,7 +275,7 @@ box-shadow:
 padding: 5px;
 border-radius: 10px;
 }
-.like:hover, .mess:hover, search:hover, .threedot:hover{
+.like:hover, .mess:hover, .search:hover, .threedot:hover{
     background-color: #65676b6b;
 }
 .new-top{
@@ -272,15 +292,16 @@ border-radius: 10px;
 
 }
 .creat{
+    
     padding: 10px;
     flex: 1;
-    margin: auto;
     text-align: center;
     background-color:#e4e6eb;
     border-radius: 5px;
     box-sizing: border-box;
-    margin: 0 10px;
+    margin: 0 30px;
     font-weight: 600;
+    
 }
 .creat:hover{
     background-color: #65676b57;
@@ -288,8 +309,9 @@ border-radius: 10px;
 .new-bottom{
     display: flex;
     justify-content: space-between;
-    padding: 30px;
-    align-items: center;
+    padding: 20px 0;
+    
+    box-sizing: border-box;    
 }
 
 .img, .checkin, .tag{
@@ -303,6 +325,9 @@ font-weight:
 padding: 5px 15px;
 border-radius: 5px;
 cursor: pointer;
+display: flex;
+align-items: center;
+justify-content: center;
 }
 .img:hover, .checkin:hover, .tag:hover{
     background-color: rgba(0, 0, 0, 0.219);
@@ -310,3 +335,87 @@ cursor: pointer;
 .new-bottom img{
     width: 25px;
 }
+.tag{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.contain{
+    display: flex;
+    flex-direction: column;
+}
+.animation{
+    display: flex;
+    background-color: white;
+    margin-top: 10px;
+    margin-left: 10px;
+    padding: 10px;
+    text-align: center;
+    justify-content: center;
+    border-radius: 10px;
+    box-shadow:
+#000000 0px 1px 2px 0px;
+}
+.text, .heart, .transform{
+    font-size: 40px;
+    font-weight: 600;
+    margin: 0 5px;
+}
+.text{
+    color: gold;
+}
+.heart{
+    color: pink;
+    animation: flow 4s infinite;
+}
+@keyframes flow{
+    0%{scale: 1;}
+    25%{scale: 1.2;}
+    50%{scale: 1;}
+    75%{scale: 1.2;}
+    100%{scale: 1;}
+}
+.transform{
+    width: min-content;
+    text-align: left;
+    position: relative;
+}
+.transform-1, .transform-2,.transform-3{
+    position: absolute;
+    
+}
+.transform-1{
+    animation: replace1 5s  infinite  cubic-bezier(0.4, 0, 1, 1);
+    top:-10px;
+}
+.transform-2{
+    animation: replace2 5s infinite  cubic-bezier(0.4, 0, 1, 1);
+    
+}
+.transform-3{
+    
+    animation: replace3 5s infinite cubic-bezier(0.4, 0, 1, 1);
+    
+}
+@keyframes replace1{
+    0%{ opacity: 0;}
+    25%{ opacity: 1;color: green;transform: translateY(10px);}
+    50%{ opacity: 0;transform: translateY(10px);}
+    75%{ opacity: 0;}
+    100%{ opacity: 0;}
+}
+@keyframes replace2{
+    0%{ opacity: 0;}
+    25%{ opacity: 0;}
+    50.5%{ opacity: 1;color: red;}
+    75%{ opacity: 0;}
+    100%{ opacity: 0;}
+}
+@keyframes replace3{
+    0%{ opacity: 0;}
+    25%{ opacity: 0;}
+    50%{ opacity: 0;}
+    75.5%{ opacity: 1;color: violet;}
+    100%{ opacity: 0;}
+}
+
