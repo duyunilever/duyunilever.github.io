@@ -10,12 +10,14 @@ body{
 .top{
     display: flex;
     flex-direction: column;
+    
     padding: 0 15vw;
     box-shadow: 
-    #000000 0px 1px 2px 0px;
+    #000000 0px 0px 2px 0px;
 }
 .header{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     padding-bottom: 20px;
@@ -75,7 +77,7 @@ padding: 0 50px;
 }
 .nav{
     display: flex;
-    justify-content: space-between;
+    justify-content:space-between;
     align-items: center;
     padding: 16px 0;
     flex-wrap: wrap;
@@ -200,7 +202,6 @@ padding: 0 50px;
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
-    flex: 1;
 }
 .like{
     display: flex;
