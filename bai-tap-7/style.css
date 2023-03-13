@@ -206,6 +206,7 @@ padding: 0 50px;
 .like{
     display: flex;
     gap:2px;
+    align-items: center;
     background-color: #e7f3ff;
     color:
 #1877f2;
@@ -219,6 +220,7 @@ border-radius: 6px;
 margin-right: 5px;
 cursor: pointer;
 order: 3;
+line-height: 15px;
 }
 .mess, .search, .threedot{
     display: flex;
@@ -232,7 +234,8 @@ order: 3;
     margin-right: 5px;
     box-sizing: border-box;
     cursor: pointer;
-    
+    align-items: center;
+    line-height: 15px;
 }
 .mess{
     min-width: 110px;
