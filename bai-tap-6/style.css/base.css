@@ -3,6 +3,7 @@
     --color-rgba:rgb(240,248,242);
     
 }
+
 body{
     margin: 0;
     font-family:Tahoma;
@@ -12,10 +13,10 @@ body{
     color: var(--color-main);
     position: fixed;
     z-index: 1;
-    top:35vw;
-    right: 3vw;
-    font-size: 5vw;
-    opacity: 0.8;
+    bottom:0;
+    right: 2vw;
+    font-size: 3vw;
+    opacity: 0.6;
     cursor: pointer;
     animation: ring 1s infinite linear alternate;
 }
@@ -36,17 +37,19 @@ body{
 .header{
     background-color: white;
     z-index: 10;
-    width: 100vw;
+    width: 100%;
     display: flex;
     padding-top: 1.5vw;
     padding-bottom: 1.5vw;
     border-bottom: 1px solid rgba(129, 128, 128, 0.516);
     position: relative;
+    box-sizing: border-box;
 }
 .body{
+    width: 100%;
     display: flex;
     margin-right: 3vw;
-    margin-left: -1vw;     
+    margin-left: 1vw;     
 }
 .content{
     display: flex;
@@ -75,18 +78,19 @@ body{
 .hot{
     display: flex;
     flex-direction: column;
+    
 }
 .hot-bottom{
     display: flex;
     justify-content: space-between;
-    
+    flex-wrap: wrap;
     
 }
 .hot-game{
     display: flex;
     flex-direction: column;
     width: 22vw;
-    
+    transition: 0.2s linear;
     cursor: pointer;
 }
 .hot-game:not(.hot-game:last-child){
@@ -117,12 +121,13 @@ body{
     flex-direction: column;
     width: calc((75vw - 5vw)/5);
     cursor: pointer;
+    transition: 0.2s linear;
 }
 .suggestion-game:not(.suggestion-game:first-child){
     margin-left: 1vw;
 }
 .suggestion-game:hover{
-    animation: trans 0.25s ease both;
+    translate: 0 -3px;
 }
     /* cooker game */
 .cooker{
@@ -149,9 +154,11 @@ body{
     cursor: pointer;
     box-sizing: border-box;
     margin-bottom: 1.7vw;
-
+    
 }
-
+.cooker-game:hover img{
+    scale: 1.1;
+}
 .cooker-game-title{
     display: flex;
     flex-direction: column;
