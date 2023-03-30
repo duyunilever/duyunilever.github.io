@@ -1,31 +1,57 @@
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
+//        Scanner sc = new Scanner(System.in);
+//        System.out.println("Nhập số hàng");
+//        int a = sc.nextInt();
+//        System.out.println("Nhập số cột");
+//        int b = sc.nextInt();
+//        int[][] numbers = new int[a][b];
+//
+////Để duyệt mảng đa chiều cần sử dụng 2 vòng lặp, 1 vòng lặp duyệt hàng và một vòng lặp duyệt cột
+//        for(int i = 0; i < numbers.length; i++){
+//            for(int j = 0; j < numbers[i].length; j++){
+//                System.out.println("Nhập giá trị hàng" + (i+1) + "cột" + (j+1));
+//                numbers [i][j] = sc.nextInt();
+//            }
+//        }
+//        for(int i = 0; i < numbers.length; i++) {
+//            for (int j = 0; j < numbers[i].length; j++) {
+//                System.out.print(numbers[i][j] + "\t");
+//            }
+//            System.out.println();
+//        }
+//
+//        int sum1=0;
+//        int sum2=0;
+//        for(int i = 0; i < numbers.length; i++) {
+//            for (int j = 0; j < numbers[i].length; j++) {
+//                if (numbers[i][j] % 2 == 0){
+//                    sum1+= numbers[i][j];
+//                } else if (numbers[i][j] % 2 != 0) {
+//                    sum2+= numbers[i][j];
+//                }
+//            }
+//        }
+//        System.out.println(sum1 + "|" + sum2);
+
+
+
+
+
+
+        System.out.println("Nhập số lượng phần tử của mảng: ");
         Scanner sc = new Scanner(System.in);
-        String continues;
-        String name;
-        String address;
-        int age;
-        do {
-            System.out.println("Mời nhập tên: ");
-            name = sc.nextLine();
-            System.out.println("Mời nhập địa chỉ: ");
-            address = sc.nextLine();
-            System.out.println("Mời nhập tuổi: ");
-            age = Integer.parseInt(sc.nextLine());
-
-            System.out.println("Thông tin sinh viên");
-            System.out.println("Tên: " + name);
-            System.out.println("Địa chỉ: " + address);
-            if (age>0) {
-                System.out.println("Tuổi: " + age);
-            } else {
-                System.out.println("Tuổi: Bạn nhập sai, mời nhập lại");
-            }
-
-            System.out.println("Bạn có muốn nhập tiếp thông tin không?(Y/N)");
-            continues = sc.nextLine();
-        } while (continues.equalsIgnoreCase("y"));
+        int b = sc.nextInt();
+        int [] arr = new int[b];
+        for (int i = 0; i < arr.length; i++) {
+            System.out.println("Nhập phần tử thứ " + (i+1));
+            arr[i] = sc.nextInt();
+        }
+        Arrays.sort(arr);
+        System.out.println("Giá trị lớn nhất trong mảng là: " + arr[arr.length-1]);
+        System.out.println("Giá trị nhỏ nhất trong mảng là: " + arr[0]);
     }
 }
